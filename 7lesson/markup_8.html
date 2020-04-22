@@ -2,24 +2,30 @@
 <html lang="en">
 <head>
     <style>
-        .relative {
+            .relative {
             position: relative;
             height: 60px;
-            width: 700px;
             margin: 8px;
             background-color: #dddddd;
-            display: flex;
-            justify-content: space-between;
-}
-        .square {    
+                    }
+
+             .square {
             height: 20px; 
             width: 20px;
             background-color: #222222;
-            position: relative;
+            }
+
+            .square:first-child {    
+            position: absolute;
             top: 20px;
             left: 20px;
-            margin-right: 2.5em;
             } 
+
+            .square:last-child {
+                position: absolute;
+                right: 20px;  
+                top: 20px; 
+            }
     </style>
 </head>
 <body>
