@@ -1,0 +1,27 @@
+<html>
+  <head> </head>
+  <body>
+    <script>
+      const base = 2;
+
+      let ul = document.createElement("ul");
+      document.body.appendChild(ul);
+
+      var newResult = [];
+      var result = base ;
+
+       for (let i = 0; i < 30; i++) {  
+           result = result * base;
+           newResult.push(result);
+        }
+
+           newResult.forEach(function (elem) {
+           let li = document.createElement("li");
+           li.innerText = elem;
+           ul.appendChild(li);
+           
+         });
+      
+    </script>
+  </body>
+</html>
