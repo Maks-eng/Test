@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+</head>
+<body>
+  <input type="text" id="message"  />
+  <div id="showMessage" >&nbsp;</div>
+
+<script type="text/javascript">
+
+const message = document.querySelector('input');
+const log = document.getElementById('showMessage');
+
+message.addEventListener('input', updateValue);
+
+function updateValue(e) {
+  log.textContent = e.target.value;
+  showMessage.style.color = "yellow";
+showMessage.style.backgroundColor = "green" ;
+
+
+
+
+}
+showMessage.size = "20"
+</script>
+</body>
+</html>
