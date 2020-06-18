@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+
+<body style="height: 100vh;">
+
+  <div id="square" style="width: 20px; height: 20px; background-color: green; position: absolute;" ></div>
+  
+</body>
+
+<script type="text/javascript"> 
+  const squareElement = document.getElementById('square') 
+
+  document.body.addEventListener('mousemove', ({clientX, clientY})=>
+    Object.assign(squareElement.style, {
+      top: `${clientY}px` , 
+       left: `${clientX}px` 
+    
+  }));  
+        </script>
+</html>
